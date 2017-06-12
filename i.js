@@ -40,8 +40,21 @@ function veHinh(soDong, getSoCot, check) {
     }
 }
 
+// veHinh(10, function(soDong) {
+//     return soDong
+// }, function(soDong, soCot, i, j) {
+//     return j <= i;
+// });
+
+// veHinh(10, function(soDong) {
+//     return soDong
+// }, function(soDong, soCot, i, j) {
+//     return soDong - i > j;
+// });
+
 veHinh(5, function(soDong) {
-    return soDong
+    return  soDong * 2 - 1;
 }, function(soDong, soCot, i, j) {
-    return j <= i;
+    return i >= 4 - j && i >= j - 4;
+    // return  i >= j - 4;
 });
