@@ -13,8 +13,14 @@ console.log(arr);
 
 const arrNum = [2, 4, 5, 6, 7, 9, 2, 1];
 
+// arr.reverse();
+
 //[2, 4, 6, 2]
 const arrOutput = [];
+
+// let arrX = arrOutput.push(100);
+
+// console.log(arrX);
 
 for (let i = 0; i < arrNum.length; i++) {
     if (arrNum[i] % 2 === 0) arrOutput.push(arrNum[i]);
