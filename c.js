@@ -7,8 +7,6 @@ console.log(add(3, 4));
 
 
 
-
-
 console.log(add('Hoc', ' NodeJS'));
 
 function total(n) {

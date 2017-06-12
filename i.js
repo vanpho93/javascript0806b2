@@ -52,9 +52,10 @@ function veHinh(soDong, getSoCot, check) {
 //     return soDong - i > j;
 // });
 
-veHinh(5, function(soDong) {
-    return  soDong * 2 - 1;
-}, function(soDong, soCot, i, j) {
-    return i >= 4 - j && i >= j - 4;
-    // return  i >= j - 4;
-});
+const funcHinhNon = (soDong, soCot, i, j) => i >= soDong - 1 - j && i >= j - soDong + 1;
+
+veHinh(
+    10, 
+    soDong => soDong * 2 - 1, 
+    funcHinhNon
+);
